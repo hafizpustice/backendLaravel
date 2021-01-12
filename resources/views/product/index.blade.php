@@ -40,10 +40,11 @@
                         <thead>
                             <tr>
                                 <th width="5%">ID</th>
-                                <th width="35%">Title</th>
+                                <th width="25%">Title</th>
+                                <th width="30%">Description</th>
                                 <th width="10%">price</th>
-                                <th width="30%">Image</th>
-                                <th width="20%">Action</th>
+                                <th width="15%">Image</th>
+                                <th width="15%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,6 +53,7 @@
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->title }} </td>
+                                <td>{{ $item->description }} </td>
                                 <td>{{ $item->price }}</td>
                                 <td>
                                     <img src="{{ asset($item->image) }}" alt="Image">
